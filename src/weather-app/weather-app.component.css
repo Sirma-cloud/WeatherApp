@@ -1,0 +1,99 @@
+/* .mycontainer {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+} */
+.mycontainer{
+  height: 900px;
+  height: 650px;
+  padding: 0%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+
+}
+.container{
+  width: 900px;
+  height: 500px;
+  border-radius: 25px;
+  margin-top: 100px;
+  /* overflow: hidden; */
+  background: #222831;
+  padding:0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-data{
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 25px;
+  margin-left: 0;
+  background: #b1cbdde5; 
+  display: flex;
+  justify-content: center;
+}
+.paragraph{
+  /* background:"../assets/bg_image.png"; */
+  width: 100px;
+  height: 200px;
+  margin-left: 50px;
+  margin-top: 30px;
+  /* text-align: center; */
+
+}
+
+.Eldoret{
+  width: 100px;
+  height: 30px;
+  margin-right: 70px;
+  margin-top: 300px;
+  text-align: center;
+  
+}
+
+.right-data{
+  height: 500px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* justify-content: space-between; */
+}
+
+.weather{
+  height: 150px;
+  width: 500px;
+  margin-left: 30px;
+  margin-top: 70px;
+  color: #edf0f5;
+}
+.climate{
+  height: 100px;
+  width: 500px;
+  margin-left: 30px;
+  margin-top: 0px;
+  color: #edf0f5;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+}
+/* .mon{
+  position: absolute;
+  width: 104px;
+  height: 168px;
+  left: 750px;
+  top: 487px;
+} */
+.search{
+  height: 70px;
+  width: 400px;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+.mon{
+  border-radius: 2px;
+  background-color: #edf0f5;
+}
