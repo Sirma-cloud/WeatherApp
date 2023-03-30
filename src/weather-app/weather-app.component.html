@@ -11,37 +11,38 @@
       </div> -->
 <!-- </div> -->
 <!-- </div> -->
-<!-- <div class="mycontainer">
+
+<div class="mycontainer">
   <div class="container">
     <div class="left-data">
       <div class="paragraph">
-         <img src="../assets/bg_image.png"> -->
-        <!-- <h1 style="font-size: xx-large; font-weight: bold">{{cityName}}</h1>
+        <!-- <img src="../assets/bg_image.png">  -->
+        <h1 style="font-size: xx-large; font-weight: bold">{{ city }}</h1>
         <p>17th/02/2022</p>
         <p style="font-size: larger">TODAY</p>
       </div>
       <div class="Eldoret">
-        <p><img src="{{ iconURL }}" alt=" weather image" /></p>
-        <p>{{ temperature }}</p>
+        <!-- <p><img src="{{ iconURL }}" alt=" weather image" /></p> -->
+        <p>{{ weatherData.temp }}</p>
         <p>SUNNY</p>
       </div>
     </div>
     <div class="right-data mr-7">
       <div class="weather">
         <p>PRECIPITATION 0%</p>
-        <p>HUMIDITY: {{ humidity }}</p>
+        <p>HUMIDITY: {{ weatherData.main.humidity }}</p>
         <p>WIND 3 km/h</p>
       </div>
       <div class="climate">
         <div class="Mon">
           <i class="fa fa-sun-o" aria-hidden="true"></i>
           <h4>Mon</h4>
-          <p>{{ temperature }}°C</p>
+          <p>{{ weatherData.temp }}°C</p>
         </div>
         <div class="Tue">
           <i class="fa fa-sun-o" aria-hidden="true"></i>
           <h4>Tue</h4>
-          <p>{{ temperature }}</p>
+          <p>{{ weatherData.list.main.temp }}</p>
         </div>
         <div class="Wen">
           <i class="fa fa-sun-o" aria-hidden="true"></i>
@@ -59,37 +60,7 @@
           <p>21 °C</p>
         </div>
       </div>
-      <div class="search">
-      </div>
+      <div class="search"></div>
     </div>
   </div>
-</div> --> 
-
-
-<input type="text" placeholder="Enter city name" [(ngModel)]="city">
-<button (click)="search()">Search</button>
-
-<h2>5-day Weather Forecast for {{ city }}</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Time</th>
-      <th>Description</th>
-      <th>Temperature (°C)</th>
-      <th>Humidity (%)</th>
-      <th>Wind Speed (m/s)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let item of weatherData.list">
-      <td>{{ item.dt_txt | date:'mediumDate' }}</td>
-      <td>{{ item.dt_txt | date:'shortTime' }}</td>
-      <td>{{ item.weather[0].description }}</td>
-      <td>{{ item.main.temp - 273.15 | number:'1.0-1' }}</td>
-      <td>{{ item.main.humidity }}</td>
-      <td>{{ item.wind.speed }}</td>
-    </tr>
-  </tbody>
-</table>
+</div>

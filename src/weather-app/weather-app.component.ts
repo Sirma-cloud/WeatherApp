@@ -48,7 +48,7 @@ export class WeatherAppComponent implements OnInit {
 //   pressure: number = 0;
 //   summary: string = '';
 //   iconURL: string = ';';
-//   cityName: string = 'ELdoret';
+//   city: string = 'ELdoret';
 //   units: string = 'metric';
 //   errorMessage: any;
 //   myactivity: any;
@@ -57,7 +57,7 @@ export class WeatherAppComponent implements OnInit {
 //   constructor(private weatherService: WeatherService) {}
 
 //   ngOnInit(): void {
-//     this.weatherService.getWeather(this.cityName, this.units).subscribe({
+//     this.weatherService.getWeather(this.city,).subscribe({
 //       next: (res) => {
 //         console.log('This is the weather', res);
 //         this.myWeather = res;
@@ -67,7 +67,7 @@ export class WeatherAppComponent implements OnInit {
 //         this.humidity = this.myWeather.main.humidity;
 //         this.pressure = this.myWeather.main.pressure;
 //         this.summary = this.myWeather.weather[0].main;
-//         this.cityName = '';
+//         this.city = '';
 
 //         this.iconURL =
 //           'https://openweathermap.org/img/wn/' +
@@ -81,6 +81,7 @@ export class WeatherAppComponent implements OnInit {
 //     });
 //   }
 // }
+
 
   // This is a search functionality to change city name
 //   onSubmit() {

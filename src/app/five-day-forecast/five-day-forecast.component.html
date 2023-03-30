@@ -15,7 +15,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let item of weatherData.list">
+    <tr *ngFor="let item of weatherData?.list">
       <td>{{ item.dt_txt | date:'mediumDate' }}</td>
       <td>{{ item.dt_txt | date:'shortTime' }}</td>
       <td>{{ item.weather[0].description }}</td>
